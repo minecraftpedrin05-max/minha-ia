@@ -1,0 +1,514 @@
+PROMPT COMPLETO — AUDITORIA E EVOLUÇÃO DA NEXUS IA
+
+Você vai receber um projeto existente chamado Nexus IA.
+
+Sua missão é analisar, corrigir, melhorar e evoluir o projeto existente, sem simplesmente criar outra IA do zero.
+
+REGRA PRINCIPAL
+NÃO reconstrua a Nexus IA do zero. Analise todos os arquivos, entenda a arquitetura, identifique os problemas e faça as alterações necessárias mantendo a identidade e estrutura da Nexus.
+
+Preserve, sempre que possível:
+- FastAPI no backend
+- Streamlit no frontend
+- SQLAlchemy
+- SQLite atualmente
+- possibilidade futura de MongoDB
+- Python
+- compatibilidade com Termux/Android
+- estrutura modular existente
+
+Só altere a arquitetura quando houver justificativa técnica real.
+
+1. AUDITORIA COMPLETA
+Analise TODOS os arquivos e procure:
+- erros de sintaxe/imports;
+- dependências;
+- incompatibilidades;
+- erros de API;
+- banco de dados;
+- autenticação;
+- frontend;
+- sessões;
+- segurança e permissões;
+- endpoints vulneráveis;
+- validação;
+- tratamento de erros;
+- configuração/ambiente;
+- código incompleto;
+- funções falsas ou simuladas.
+
+Não esconda problemas. Explique e corrija.
+
+2. ERRO PRINCIPAL DA IA
+O backend atual possui lógica semelhante a:
+resposta = f"Você perguntou: {request.mensagem}"
+
+Isso apenas repete a mensagem do usuário e NÃO é uma resposta de IA.
+
+Exemplo:
+Usuário: Qual é a capital do Brasil?
+Nexus atual: Você perguntou: Qual é a capital do Brasil?
+
+Corrija isso. A Nexus precisa realmente processar a mensagem e gerar uma resposta de IA.
+
+Implemente integração real com um modelo/API usando variáveis de ambiente. Não coloque API keys no código. Use .env. Permita trocar o provedor/modelo futuramente.
+
+Trate:
+- erros da API;
+- timeout;
+- indisponibilidade;
+- secrets;
+- respostas reais.
+
+Não use respostas falsas para fingir que a IA funciona.
+
+Teste:
+usuário -> backend -> modelo de IA -> resposta -> frontend.
+
+3. NEXUS IA
+Mantenha a Nexus como plataforma de IA própria, com:
+- conversa;
+- histórico;
+- contexto;
+- regenerar;
+- editar;
+- continuar;
+- copiar;
+- personalização;
+- funções por plano;
+- análise de arquivos;
+- análise de imagens quando disponível;
+- código;
+- explicações;
+- tradução;
+- resumo;
+- geração de textos;
+- estudo;
+- programação;
+- documentos.
+
+Não transforme em clone visual de outra IA.
+
+4. FRONTEND MOBILE
+Prioridade Android e telas pequenas.
+Interface:
+- preta/cinza;
+- moderna;
+- limpa;
+- profissional;
+- chat clássico de IA;
+- responsiva;
+- rápida.
+
+Não encha o chat principal de neon ou cores exageradas.
+
+5. PLANOS
+Criar:
+FREE — funções básicas.
+START — mais mensagens e funções adicionais.
+PRO — funções avançadas.
+ULTRA — funções avançadas e limites maiores.
+ULTIMATE — acesso máximo.
+
+Cada plano deve realmente liberar/bloquear funções no BACKEND, não apenas esconder botões.
+
+6. DURAÇÕES
+Cada plano:
+- diário;
+- semanal;
+- mensal;
+- anual;
+- permanente.
+
+Controlar início, expiração, status, plano e histórico. Permanente não expira.
+
+7. PREÇOS INICIAIS
+START:
+R$ 0,99/dia
+R$ 2,49/semana
+R$ 4,99/mês
+R$ 49,90/ano
+R$ 99,90 permanente
+
+PRO:
+R$ 1,99/dia
+R$ 4,99/semana
+R$ 9,99/mês
+R$ 99,90/ano
+R$ 199,90 permanente
+
+ULTRA:
+R$ 2,99/dia
+R$ 7,99/semana
+R$ 19,99/mês
+R$ 199,90/ano
+R$ 399,90 permanente
+
+ULTIMATE:
+R$ 4,99/dia
+R$ 11,99/semana
+R$ 29,99/mês
+R$ 299,90/ano
+R$ 599,90 permanente
+
+Deixe preços configuráveis pelo ADM/backend.
+
+8. PAGAMENTOS
+Fluxo:
+Plano -> duração -> pagamento -> comprovante -> análise -> ADM -> aprovação/rejeição.
+
+Enviar comprovante não deve ativar automaticamente o plano.
+
+9. COMPROVANTE
+Receber, validar, analisar informações visíveis, detectar possíveis inconsistências, gerar análise preliminar e enviar ao ADM.
+
+A IA não deve afirmar que um comprovante é verdadeiro apenas pela análise visual. Classificar, por exemplo:
+- provável;
+- suspeito;
+- inconclusivo.
+
+Decisão final de aprovação pertence ao responsável administrativo.
+
+10. PAGAMENTO SEPARADO DO CHAT
+Criar área própria:
+Pagamento / Confirmar pagamento.
+
+Ao clicar:
+Confirmar pagamento -> conversa de pagamento -> pedir comprovante -> analisar -> enviar ao ADM -> status aguardando/aprovado/rejeitado.
+
+Se rejeitado, mostrar o motivo do ADM.
+
+11. PAINEL ADM
+Criar painel administrativo separado.
+
+VISÃO GERAL:
+- usuários;
+- ativos;
+- mensagens;
+- planos;
+- pagamentos pendentes/aprovados/rejeitados;
+- receita;
+- estatísticas.
+
+PAGAMENTOS:
+- pendentes;
+- aprovados;
+- rejeitados;
+- histórico;
+- busca;
+- comprovante;
+- análise da Nexus;
+- aprovar;
+- rejeitar;
+- motivo.
+
+CARTEIRA NEXUS:
+- saldo;
+- entradas;
+- saídas;
+- histórico;
+- transações;
+- valores pendentes;
+- solicitações de saque;
+- extrato.
+
+USUÁRIOS:
+- listar;
+- pesquisar;
+- perfil;
+- plano;
+- duração;
+- compras;
+- mensagens;
+- status;
+- suspender/desbloquear;
+- encerrar sessões.
+
+PLANOS:
+- criar;
+- editar;
+- ativar/desativar;
+- preço;
+- duração;
+- funções liberadas.
+
+ESTATÍSTICAS:
+- usuários por período;
+- mensagens;
+- vendas;
+- receita;
+- plano mais vendido;
+- aprovações/rejeições.
+
+COMUNICAÇÃO:
+- avisos;
+- manutenção;
+- notificações.
+
+LOGS:
+- login;
+- pagamentos;
+- aprovações/rejeições;
+- alterações de plano;
+- ações ADM;
+- segurança.
+
+12. NEXUS GUARD — IA DE SEGURANÇA
+Criar uma área chamada Nexus Guard.
+
+Ela poderá analisar mensagens e imagens enviadas dentro da plataforma para finalidades legítimas de segurança/moderação, com transparência e privacidade.
+
+Detectar categorias como:
+- conteúdo sexual inadequado;
+- exploração ou sexualização de menores;
+- tentativa de solicitar conteúdo sexual envolvendo menores;
+- ameaças;
+- violência;
+- incentivo a atividades perigosas;
+- outros conteúdos proibidos pelas regras da plataforma.
+
+PROTEÇÃO DE MENORES:
+Se uma conversa indicar que existe menor envolvido em situação que exige proteção, aplicar as regras de segurança apropriadas.
+
+IMPORTANTE:
+Não tentar descobrir idade real pela aparência de uma pessoa em foto. Não usar reconhecimento facial para determinar se alguém é menor. Contexto e sinais podem ser classificados, mas idade não deve ser tratada como fato apenas pela aparência.
+
+13. ANÁLISE DE IMAGENS
+Quando houver modelo de visão apropriado, analisar imagens para moderação:
+- classificar;
+- detectar categorias proibidas;
+- gerar sinalização;
+- registrar o mínimo necessário;
+- evitar armazenamento desnecessário;
+- respeitar privacidade.
+
+Não transformar Nexus Guard em ferramenta de vigilância.
+Não usar reconhecimento facial para descobrir identidade.
+
+14. OCORRÊNCIAS
+No ADM:
+Nexus Guard -> Ocorrências
+
+Mostrar:
+- ID;
+- usuário;
+- categoria;
+- risco;
+- data;
+- ação;
+- status;
+- revisão quando necessária.
+
+Não mostrar conteúdo sensível desnecessariamente.
+
+15. SEGURANÇA
+Implementar:
+- autenticação;
+- autorização;
+- sessões seguras;
+- validação de entrada;
+- rate limiting;
+- proteção de endpoints;
+- logs;
+- permissões;
+- validação de propriedade;
+- isolamento entre contas;
+- tratamento seguro de arquivos;
+- proteção de secrets.
+
+Nunca confiar no frontend para segurança.
+
+16. OWNER/ADM
+Owners autorizados:
+minecraftpedrin05@gmail.com
+bloxpedro22@gmail.com
+pedrohenryqueferreiracruz@gmail.com
+
+Somente essas contas possuem OWNER.
+
+O backend deve verificar isso. Esconder botão não é suficiente.
+
+Acesso administrativo sem autorização -> 403 Forbidden.
+
+Usuário comum não pode:
+- virar ADM;
+- alterar próprio cargo;
+- acessar carteira;
+- acessar pagamentos de outros;
+- alterar planos;
+- acessar logs ADM;
+- modificar configurações globais.
+
+Não invente credenciais.
+
+17. ISOLAMENTO TOTAL ENTRE USUÁRIOS
+Usuário A nunca pode acessar/modificar:
+- dados de B;
+- carteira de B;
+- plano de B;
+- arquivos de B;
+- configurações de B;
+- sessão de B;
+- histórico de B.
+
+Em toda operação verificar:
+usuário autenticado -> recurso -> proprietário.
+
+Separar código global dos dados específicos.
+
+Problema em uma conta não pode derrubar ou modificar outras contas.
+
+Criar testes de acesso cruzado.
+
+18. INTEGRIDADE
+Detectar alterações não autorizadas em arquivos/configurações importantes usando, conforme apropriado:
+- hashes;
+- versionamento;
+- checksums;
+- logs;
+- permissões.
+
+Se houver incidente, aplicar proteção somente à conta afetada quando possível.
+
+NÃO criar malware, código destrutivo, infecção ou mecanismos para quebrar dispositivos. A proteção deve ser defensiva e server-side.
+
+19. CARTEIRA
+A IA nunca deve ter poder irrestrito para:
+- transferir dinheiro;
+- apagar saldo;
+- alterar saldo;
+- liberar saque.
+
+Operações financeiras importantes precisam de regras determinísticas e autorização apropriada. Registrar movimentações. Nunca confiar no frontend para saldo.
+
+20. LOGIN
+Métodos previstos:
+- Google;
+- GitHub;
+- Discord;
+- Email.
+
+As credenciais OAuth ainda serão configuradas depois.
+
+Não tratar ausência de credenciais OAuth como erro definitivo.
+Não inventar client ID, client secret, tokens ou URLs secretas.
+Preparar tudo para variáveis de ambiente.
+
+21. BANCO
+Estruturar para:
+- usuários;
+- sessões;
+- planos;
+- assinaturas;
+- pedidos;
+- pagamentos;
+- comprovantes;
+- carteira;
+- transações;
+- ocorrências;
+- logs;
+- mensagens;
+- configurações.
+
+Manter SQLite por enquanto e preparar futura migração. Não colocar secrets no código.
+
+22. TESTES
+Testar:
+
+IA:
+- mensagem;
+- chamada real do modelo;
+- resposta;
+- erro do modelo.
+
+Autenticação:
+- login;
+- sessão;
+- logout.
+
+Permissões:
+- usuário sem ADM -> bloqueado;
+- owner -> permitido;
+- acesso a outra conta -> bloqueado.
+
+Pagamentos:
+- pedido;
+- comprovante;
+- análise;
+- aprovação;
+- rejeição;
+- ativação.
+
+Planos:
+- bloqueio/liberação;
+- expiração.
+
+Nexus Guard:
+- classificação de mensagens;
+- análise de imagens quando suportada;
+- ocorrência;
+- evitar bloqueios indiscriminados.
+
+Isolamento:
+Usuário A tenta acessar recurso de B -> BLOQUEADO.
+Usuário A tenta modificar recurso de B -> BLOQUEADO.
+
+23. PERFORMANCE
+Evitar chamadas desnecessárias, consultas repetidas, processamento bloqueante e carregamento desnecessário. Usar async quando fizer sentido.
+
+24. TERMUX
+Continuar compatível com Android/Termux.
+Não adicionar dependências que exijam obrigatoriamente PC/GPU.
+Atualizar requirements.txt, .env.example, documentação e comandos.
+
+25. README
+Atualizar com:
+- descrição;
+- arquitetura;
+- instalação;
+- configuração;
+- .env;
+- backend;
+- frontend;
+- IA;
+- OAuth;
+- banco;
+- planos;
+- pagamentos;
+- ADM;
+- Nexus Guard;
+- testes;
+- deploy.
+
+26. NÃO FAÇA
+Não:
+- recrie a Nexus do zero;
+- transforme em outro produto;
+- remova funcionalidades sem motivo;
+- invente credenciais;
+- coloque secrets no código;
+- trate OAuth sem credenciais como bug definitivo;
+- deixe frontend controlar permissões;
+- deixe usuário alterar próprio plano;
+- use reconhecimento facial para determinar idade;
+- armazene dados sensíveis sem necessidade;
+- dê autoridade financeira irrestrita à IA;
+- crie malware ou mecanismos destrutivos.
+
+27. ENTREGA FINAL
+Apresente:
+1. Problemas encontrados.
+2. Correções realizadas.
+3. Arquivos alterados.
+4. Novos arquivos.
+5. Dependências.
+6. Variáveis .env.
+7. Testes e resultados.
+8. O que ainda depende de configuração externa.
+9. Código final dos arquivos modificados quando necessário.
+
+OBJETIVO FINAL
+
+Pegue a Nexus IA existente, encontre os problemas reais, corrija principalmente o erro que faz a IA apenas repetir a mensagem do usuário, transforme o chat em uma IA funcional e implemente a estrutura de planos, pagamentos, comprovantes, carteira, painel ADM, Nexus Guard, segurança, isolamento entre usuários e testes, sem destruir ou substituir a Nexus existente.
+
+A Nexus deve terminar como uma plataforma de IA funcional, segura, responsiva e preparada para crescer.
